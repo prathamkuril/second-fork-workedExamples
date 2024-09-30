@@ -467,3 +467,4 @@ def run_tests(config: ApiConfiguration, test_destination_dir: str, source_dir: s
     processed_question_chunks = read_processed_chunks(source_dir)
     question_results = process_questions(client, config, questions, processed_question_chunks, logger)
     save_results(test_destination_dir, question_results, test_mode)
+    
